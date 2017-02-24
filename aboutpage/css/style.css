@@ -31,10 +31,13 @@ html, body, p {
 
 }
 
+.playbutton {
+  text-align: center;
+}
+
 .playbutton img {
   max-width: 200px;
   display: inline-block;
-  padding-left: 3%;
 }
 
 @media(min-width:768px) {
@@ -47,7 +50,7 @@ html, body, p {
     -o-background-size: cover;
   }
   .intro h1 {
-    width: 50%;
+    width: 40%;
     font-size: 4vw;
   }
   .playbutton img {
@@ -70,6 +73,7 @@ html, body, p {
 .about-text {
   width: 100%;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .about-text h2 {
