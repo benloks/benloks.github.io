@@ -16,9 +16,8 @@ html, body, p {
   position: relative;
   background: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,.4)), url(../img/bg.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
 
 .intro h1 {
@@ -40,7 +39,7 @@ html, body, p {
 
 @media(min-width:768px) {
   .intro {
-    height: 70%;
+    min-height: 50%;
     background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0)), url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -49,7 +48,7 @@ html, body, p {
   }
   .intro h1 {
     width: 50%;
-    font-size: 50px;
+    font-size: 4vw;
   }
   .playbutton img {
     max-width: 250px;
@@ -73,6 +72,14 @@ html, body, p {
   margin-bottom: 20px;
 }
 
+.about-text h2 {
+  margin-top: 0;
+}
+
+.about-text p {
+  padding-bottom: 18px;
+}
+
 .side-image img {
   width: 100%;
 }
@@ -91,5 +98,6 @@ html, body, p {
     width: 45%;
     padding-left: 5%;
     float: right;
+    margin-bottom: 20px;
   }
 }
