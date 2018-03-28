@@ -1,0 +1,153 @@
+<html><head><link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="apec-process.html">
+<link rel="import" href="apec-faq.html">
+<link rel="import" href="apec-shell.html">
+<link rel="import" href="shared-styles.html">
+</head><body><dom-module id="apec-app">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        --main-color: #85276B;
+        @apply(--paper-font-common-base);
+      }
+
+    </style>
+
+    <apec-shell menu="{{menu}}">
+          <header>
+            <div>
+              <div class="challengeLogo">
+                <img src="../images/APEC-appchallenge2017-rev.png" alt="APEC App Challenge">
+              </div>
+            <p class="subhead">May 23 - 24, 2018 <br>
+            Papua New Guinea</p>
+            <p id="overview">Bring your best e-commerce ideas to APEC's App Challenge and help micro businesses get online and thrive.</p>
+            <p class="learnmore" style="font-size: 18px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSer28xgdeusd1MREDbdfhiFOhTx23uFsY9Mzo57BE78icMgag/viewform?usp=sf_link"><paper-button raised=""><iron-icon icon="help-outline"></iron-icon>Join the Challenge</paper-button></a></p>
+            </div>
+        </header>
+        <!-- <section id="winners">
+          <div class="container">
+              <h3>The Winners</h3>
+
+              <div id="teams-list">
+                  <div class="team">
+                    <h4>1st Place</h4>
+                    <h4 class="grey">Economy A</h4>
+                    <h5 class="grey"><a href="">First place winner</a></h5>
+                    <div class="desc">
+                    First place winner description
+                    </div>
+                  </div>
+                  <div class="team">
+                    <h4>2nd Place</h4>
+                    <h4 class="grey">Economy B</h4>
+                    <h5 class="grey"><a href="">Second place winner</a></h5>
+                    <div class="desc">
+                    Second place winner description.
+                    </div>
+
+                  </div>
+                  <div class="team">
+                    <h4>3rd Place</h4>
+                    <h4 class="grey">Economy C</h4>
+                    <h5 class="grey"><a href="">Third place winner</a></h5>
+                    <div class="desc">
+                    Third place winner description.
+                    </div>
+
+                  </div>
+
+
+              </div>
+              <p class="learnmore"><a href="/apecapp/outcomes.html"><paper-button raised=""><iron-icon icon="help-outline"></iron-icon> All Outcomes</paper-button></a></p>
+
+          </div>
+        </section> -->
+
+        <section id="about">
+          <div class="container">
+              <h3>About</h3>
+
+              <p>During APEC in 2018, under the theme of “Harnessing Inclusive Opportunities, Embracing the Digital Future,” many high-level discussions will take place around the goal of improving the opportunities available to micro and small enterprises. Micro, small and medium-sized enterprise (MSMEs) make up roughly 98% of all businesses in the Asia-Pacific and employ two thirds of the region’s labor force, but account for only a small fraction of total exports and often struggle to expand to new markets. While online platforms for ecommerce and advertising have dramatically improved MSMEs' ability to integrate with global value chains and grow their businesses, many small-scale artisans and entrepreneurs in the Asia Pacific lack the tools or knowledge to take advantage of these opportunities. Women artisans and cooperatives - especially those in remote and rural areas - often face the greatest difficulties in accessing these opportunities. The 2018 APEC App Challenge will address this issue by using digital technologies to build practical solutions.</p>
+
+              <img src="../images/ecommerce.png">
+
+          </div>
+        </section>
+        <section id="challenge">
+          <div class="container">
+              <h3>Challenge</h3>
+              <h4>Build an online tool or app to help local (Papua New Guinean) handicraft enterprises take advantage of online platforms to access more market opportunities, build brand identity, and transact with tourist markets.</h4>
+              <p>App Challenge participants will build new mobile and web tools that enhance the impact of existing ecommerce platforms such as Shopify and customize the online shop in ways that reflect the products the shop offers for sale. Successful App Challenge projects could include solutions that amplify the reach of local sellers, features that help producers’ tell their stories in new ways, or new tools for sellers to gather business intelligence on the platform.</p>
+
+
+              <!-- <p>Participants might address this challenge in some of the following ways:</p>
+
+                <ol>
+                <li>Standards and Regulatory Compliance</li>
+                <li>Access to Financial Services</li>
+                <li>Logistics and Supply Chain Management</li>
+                <li>Building partner networks and gaining market intelligence</li>
+                </ol> -->
+                <!-- <p class="learnmore"><a href="/apecapp/challenges.html"><paper-button raised=""><iron-icon icon="help-outline"></iron-icon> Learn More</paper-button></a></p> -->
+          </div>
+        </section>
+
+        <section id="how">
+          <div class="container">
+              <h3>Process</h3>
+
+              <p>Eligible teams must be nationals and/or residents of APEC economies. Teams must consist of two individuals, and team members may not be replaced after selection as finalists. All finalists are required to be in Port Moresby for the App Challenge on May 23 and 24, 2018.</p>
+
+              <p>Finalists will retain full ownership of the products they create during the App Challenge. However, under the terms of the challenge, APEC will have specified usage and branding rights.</p>
+
+              <p>Participants do not need to define or build any part of their intended solution at the time of application. However, applicants will be evaluated based on their technical competence, understanding of the needs of small enterprises, willingness and ability to take a product to market, and willingness to do user research and analysis.</p>
+
+              <br/>
+
+              <apec-process></apec-process>
+          </div>
+        </section>
+        <section id="faq">
+          <div class="container">
+          <h3>Frequently Asked Questions</h3>
+          <apec-faq></apec-faq>
+          </div>
+        </section>
+        <section id="awards">
+          <div class="container">
+              <h3>Awards &amp; Prizes</h3>
+              <p>Participants will demonstrate their work before a panel of expert judges who will select a first, second, and third prize winner.  Along with significant prizes for all winning teams, the first prize winner will be recognized at the APEC MRT Symposium on May 24th alongside senior leadership from the government of Papua New Guinea and the APEC Secretariat. An official award ceremony will take place at the APEC Symposium on Trade and Innovation.</p>
+              <p>All finalists will receive an all-expenses-paid trip to Port Moresby for the APEC App Challenge event.</p>
+
+          </div>
+        </section>
+      </apec-shell>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'apec-app',
+
+      properties: {
+          menu: {
+            type: Array,
+            value: [
+              {title:'About',url:'#about',target:'about'},
+              // {title:'Winners',url:'#winners',target:'winners'},
+              {title:'Challenge',url:'#challenge',target:'challenge'},
+              {title:'Process',url:'#how',target:'how'},
+              {title:'FAQ',url:'#faq',target:'faq'},
+              {title:'Awards',url:'#awards',target:'awards'},
+              {title:'Partners',url:'#partners',target:'partners'},
+              {title:'Contact',url:'#contact',target:'contact'}
+            ]
+        },
+
+      }
+    });
+  </script>
+</dom-module>
+</body></html>
